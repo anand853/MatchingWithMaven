@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 157.907 sec <<< FAILURE! - in TestSuite
+clickOnMyFav(RegistarionLogInTest)  Time elapsed: 9.734 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Jezoo26] but found [Pete]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.user.reg.UserRegistration.clickOnMyFav(UserRegistration.java:39)
+	at RegistarionLogInTest.clickOnMyFav(RegistarionLogInTest.java:28)
+
