@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-@SuppressWarnings("unused")
-
 public class UserRegistrationTest {
 	static WebDriver driver;
 	static WebElement element;
@@ -23,6 +21,7 @@ public class UserRegistrationTest {
 	@Test(priority = 2)
 	public void registration() {
 		UserRegistration.clickOnMemberSignLink();
+		//
 		UserRegistration.clickOnRegistartionLink();
 		UserRegistration.enterZipCode();
 		UserRegistration.clickOnViewSinglesButton();

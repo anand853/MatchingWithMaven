@@ -1,9 +1,7 @@
 package com.user.reg;
 
-
-
-
-
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -68,7 +66,7 @@ public class Util {
 		return null;
 	}
 
-	public static void findElementbyIdAndSendKeys(WebDriver driver, String id, String searchText) {
+	public static void findElementbyIDAndSendKeys(WebDriver driver, String id, String searchText) {
 		waitTime(driver, 10);
 		driver.findElement(By.id(id)).sendKeys(searchText);
 	}
@@ -77,7 +75,7 @@ public class Util {
 		driver.manage().timeouts().implicitlyWait(secs, TimeUnit.SECONDS);
 	}
 
-	public static void findElementbyNameAndSendKeys(WebDriver driver, String name, String searchText) {
+	public static void findElementByNameAndSendKeys(WebDriver driver, String name, String searchText) {
 		waitTime(driver, 10);
 		driver.findElement(By.name(name)).sendKeys(searchText);
 	}
@@ -102,7 +100,7 @@ public class Util {
 		return driver.findElement(By.id(id));
 	}
 
-	public static void findElementbyNameAndClick(WebDriver driver, String buttonName) {
+	public static void findElementByNameAndClick(WebDriver driver, String buttonName) {
 		waitTime(driver, 10);
 		driver.findElement(By.name(buttonName)).click();
 
@@ -188,5 +186,34 @@ public class Util {
 			driver.switchTo().alert().accept();
 		else
 			driver.switchTo().alert().dismiss();
+	}
+
+	public static boolean compareItemsInMenu(String[] actual, String[] result) {
+		if (actual == null || result == null) {
+			return false;
+		} else if (actual.length != result.length) {
+			return false;
+		} else {
+			return Arrays.equals(actual, result);
+		}
+	}
+
+	public static String[] captureItemsInMenu(String xpath, WebDriver driver) {
+		System.out.println(xpath);
+		List<WebElement> allElements = driver.findElements(By.xpath(xpath));
+		int i = 0;
+		String[] result = new String[7];
+		for (WebElement element : allElements) {
+
+			String s = element.getText();
+
+			result = s.split("\\n");
+			for (int x = 0; x < result.length; x++)
+				System.out.println(result[x]);
+		}
+		// System.out.println(a.length);
+
+		System.out.println("--captureItemsInMenu  ---" + Arrays.toString(result));
+		return result;
 	}
 }
