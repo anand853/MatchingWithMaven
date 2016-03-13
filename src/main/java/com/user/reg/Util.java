@@ -1,10 +1,15 @@
 package com.user.reg;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -211,9 +216,20 @@ public class Util {
 			for (int x = 0; x < result.length; x++)
 				System.out.println(result[x]);
 		}
-		// System.out.println(a.length);
 
 		System.out.println("--captureItemsInMenu  ---" + Arrays.toString(result));
 		return result;
+	}
+
+	public static void takeScreenShot(WebDriver driver) {
+
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+		try {
+			FileUtils.copyFile(scrFile, new File("./screenshots/screenshot.png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 }

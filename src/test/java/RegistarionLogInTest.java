@@ -1,9 +1,12 @@
 
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.base.utils.Util;
 import com.user.reg.UserRegistration;
 
 public class RegistarionLogInTest {
@@ -25,5 +28,13 @@ public class RegistarionLogInTest {
 	@Test(priority = 3)
 	public void clickOnMyFav() {
 		UserRegistration.clickOnMyFav();
+	}
+
+	@AfterMethod
+	public void tearDown(ITestResult results) {
+		if (ITestResult.FAILURE == results.getStatus()) {
+			UserRegistration.takeScreenShot();
+
+		}
 	}
 }

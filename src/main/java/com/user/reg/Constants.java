@@ -10,6 +10,7 @@ public interface Constants {
 
 	String REGISTARION_LINK = "/registration/registration.aspx";
 	String RESGISTARTION_LINK_TXT = "Join for FREE »";
+	String RESGISTARTION_LINK_XPATH = "//*[@id='app']/div/div[2]/div/section/p/a/strong";
 	String SIGNIN_TXT = "Member Sign In »";
 
 	String LOG_STATEMENT = "----Calling-----";

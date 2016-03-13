@@ -73,7 +73,6 @@ public class UserRegistration {
 		acessToMatchSite();
 		maximizePage();
 		clickOnMemberSignLink();
-		// compareUnkownImage();
 		enterUserNamePass();
 		comparePrimaryMenuLists();
 		compareFooterMatchOne();
@@ -92,8 +91,6 @@ public class UserRegistration {
 
 		File scrFile = driver.findElement(By.xpath(xpath)).getScreenshotAs(OutputType.FILE);
 
-		// File scrFile = ((TakesScreenshot)
-		// driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
 		} catch (IOException e) {
@@ -568,7 +565,7 @@ public class UserRegistration {
 
 		logger.info(Constants.LOG_STATEMENT + name);
 
-		Util.findElementByLinkText(driver, Constants.RESGISTARTION_LINK_TXT).click();
+		Util.findElementByXpath(driver, Constants.RESGISTARTION_LINK_XPATH).click();
 	}
 
 	public static void clickOnMemberSignLink() {
@@ -603,7 +600,7 @@ public class UserRegistration {
 	public static void openBrowser() {
 
 		name = getName();
-		// Map map = PropReader.readProp();
+	
 		String type = (String) map.get("browserType");
 		driver = Util.getBrowser(type);
 
@@ -645,6 +642,11 @@ public class UserRegistration {
 		captureElementScreenshot(Image);
 	}
 
+	public static void takeScreenShot() {
+		Util.takeScreenShot(driver);
+
+	}
+
 	public static void captureElementScreenshot(WebElement element) throws IOException {
 		File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		int ImageWidth = element.getSize().getWidth();
@@ -658,4 +660,5 @@ public class UserRegistration {
 		ImageIO.write(dest, "png", screen);
 		FileUtils.copyFile(screen, new File("D:\\screenshot.png"));
 	}
+
 }

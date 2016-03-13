@@ -3,11 +3,9 @@
 <suite verbose="0" name="Failed suite [Suite]">
   <test name="Test(failed)" preserve-order="true">
     <classes>
-      <class name="RegistarionLogInTest">
+      <class name="UserRegistrationTest">
         <methods>
-          <include name="LogIn"/>
-          <include name="clickOnUserName"/>
-          <include name="clickOnMyFav"/>
+          <include name="registration"/>
         </methods>
       </class>
     </classes>

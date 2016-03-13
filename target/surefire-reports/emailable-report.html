@@ -29,26 +29,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">78.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">59.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="3">RegistarionLogInTest<td><a href="#m1"><b>clickOnMyFav</b>  </a></td><td class="numi">1</td><td class="numi">10174</td></tr><tr class="failedodd"><td><a href="#m2"><b>clickOnUserName</b>  </a></td><td class="numi">1</td><td class="numi">38962</td></tr><tr class="failedodd"><td><a href="#m3"><b>LogIn</b>  </a></td><td class="numi">1</td><td class="numi">29490</td></tr>
+<tr class="failedodd"><td rowspan="1">UserRegistrationTest<td><a href="#m1"><b>registration</b>  </a></td><td class="numi">1</td><td class="numi">16645</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">UserRegistrationTest<td><a href="#m2"><b>accessToSite</b>  </a></td><td class="numi">1</td><td class="numi">12840</td></tr>
+<tr class="passedeven"><td rowspan="3">RegistarionLogInTest<td><a href="#m3"><b>clickOnUserName</b>  </a></td><td class="numi">1</td><td class="numi">1376</td></tr><tr class="passedeven"><td><a href="#m4"><b>clickOnMyFav</b>  </a></td><td class="numi">1</td><td class="numi">6936</td></tr><tr class="passedeven"><td><a href="#m5"><b>LogIn</b>  </a></td><td class="numi">1</td><td class="numi">21847</td></tr>
 </table>
 <h1>Test</h1>
-<a id="m1"></a><h2>RegistarionLogInTest:clickOnMyFav</h2>
+<a id="m1"></a><h2>UserRegistrationTest:registration</h2>
 <div style="padding-left:3em">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;module-user&apos;]/ul/li[2]/a&quot;}
-Command duration or timeout: 10.09 seconds
+<p>Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Join for FREE »&quot;}
+Command duration or timeout: 10.22 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
+System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.0.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: aad8e126-e0de-43ff-979f-a00a343ba47b
-*** Element info: {Using=xpath, value=//*[@id=&apos;module-user&apos;]/ul/li[2]/a}</p>
+Session ID: f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d
+*** Element info: {Using=link text, value=Join for FREE »}</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -57,93 +60,29 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at com.user.reg.Util.findElementByXpath(Util.java:90)
-<br/>at com.user.reg.UserRegistration.clickOnMyFav(UserRegistration.java:38)
-<br/>at RegistarionLogInTest.clickOnMyFav(RegistarionLogInTest.java:27)
+<br/>at com.user.reg.Util.findElementByLinkText(Util.java:95)
+<br/>at com.user.reg.UserRegistration.clickOnRegistartionLink(UserRegistration.java:571)
+<br/>at UserRegistrationTest.registration(UserRegistrationTest.java:25)
 <br/>28 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;module-user&apos;]/ul/li[2]/a&quot;}
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Join for FREE »&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
+System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.0.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
 Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5310321808136605webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5310321808136605webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 <br/>1 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>RegistarionLogInTest:clickOnUserName</h2>
-<div style="padding-left:3em">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;header-secondary&apos;]/div/span/a&quot;}
-Command duration or timeout: 10.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: aad8e126-e0de-43ff-979f-a00a343ba47b
-*** Element info: {Using=xpath, value=//*[@id=&apos;header-secondary&apos;]/div/span/a}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at com.user.reg.Util.findElementByXpath(Util.java:90)
-<br/>at com.user.reg.UserRegistration.clickOnUserName(UserRegistration.java:60)
-<br/>at RegistarionLogInTest.clickOnUserName(RegistarionLogInTest.java:22)
-<br/>28 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;header-secondary&apos;]/div/span/a&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5310321808136605webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5310321808136605webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-<br/>1 lines not shown
-</div>
+<a id="m2"></a><h2>UserRegistrationTest:accessToSite</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>RegistarionLogInTest:LogIn</h2>
-<div style="padding-left:3em">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;app&apos;]/div/div[1]/header/nav/ul[2]/li[1]/a/img&quot;}
-Command duration or timeout: 10.79 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: aad8e126-e0de-43ff-979f-a00a343ba47b
-*** Element info: {Using=xpath, value=//*[@id=&apos;app&apos;]/div/div[1]/header/nav/ul[2]/li[1]/a/img}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at com.user.reg.UserRegistration.compareUnkownImage(UserRegistration.java:88)
-<br/>at com.user.reg.UserRegistration.LogIn(UserRegistration.java:72)
-<br/>at RegistarionLogInTest.LogIn(RegistarionLogInTest.java:17)
-<br/>28 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;app&apos;]/div/div[1]/header/nav/ul[2]/li[1]/a/img&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5310321808136605webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5310321808136605webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-<br/>1 lines not shown
-</div>
+<a id="m3"></a><h2>RegistarionLogInTest:clickOnUserName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>RegistarionLogInTest:clickOnMyFav</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>RegistarionLogInTest:LogIn</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
