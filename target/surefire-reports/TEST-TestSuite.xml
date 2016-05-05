@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="59.699" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="8.093" tests="3" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_72\jre\bin"/>
     <property name="java.vm.version" value="25.72-b15"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Anand\workspace\Matching"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Building\IDEs\eclipse\iWork\Matching"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,9 +16,11 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Anand\workspace\Matching"/>
+    <property name="user.dir" value="C:\Building\IDEs\eclipse\iWork\Matching"/>
+    <property name="forkCount" value="0"/>
     <property name="java.runtime.version" value="1.8.0_72-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\Building\IDEs\eclipse\iWork\Matching"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\Anand\AppData\Local\Temp\"/>
@@ -26,9 +28,10 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.9\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Building\IDEs\eclipse\iWork\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2823454569773563445.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;&quot;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5&quot;;C:\Program Files\Apache Software Foundation\apache-maven-3.3.9\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_72\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Building\WebDriver\sikuli-webdriver-1.0.1.jar\libs;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_74/bin/server;C:/Program Files/Java/jre1.8.0_74/bin;C:/Program Files/Java/jre1.8.0_74/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.3.9\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_72\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\;C:\Users\Anand\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Building\WebServices;C:\Users\Anand\AppData\Local\Android\sdk\bin\;C:\Building\utils\gradle-2.12\bin;C:\Users\Anand\AppData\Local\Android\sdk\platform-tools;C:\Users\Anand\AppData\Local\Android\sdk\tools\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5;C:\Program Files\Git\bin;C:\Users\Anand\AppData\Local\Programs\Eclipse Che\eclipse-che-4.0.0-RC13\tools\jre\bin;C:\Program Files (x86)\nodejs\;C:\Building\WebDriver\sikuli-webdriver-1.0.1.jar\libs;C:\Program Files\Docker Toolbox;C:\Users\Anand\AppData\Roaming\npm;C:\Building\IDEs\eclipse;;."/>
+    <property name="surefire.test.class.path" value="C:\Building\IDEs\eclipse\iWork\Matching\target\test-classes;C:\Building\IDEs\eclipse\iWork\Matching\target\classes;C:\Users\Anand\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Anand\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\Anand\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\Anand\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.0\selenium-firefox-driver-2.53.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\Anand\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\Anand\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\Anand\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\Anand\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\Anand\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\Anand\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\Anand\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\Anand\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\Anand\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.20\htmlunit-driver-2.20.jar;C:\Users\Anand\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.20\htmlunit-2.20.jar;C:\Users\Anand\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\Anand\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\Anand\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\Anand\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Anand\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\Anand\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\Anand\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\Anand\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\Anand\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.18\cssparser-0.9.18.jar;C:\Users\Anand\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\Anand\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Anand\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.15.v20160210\websocket-client-9.2.15.v20160210.jar;C:\Users\Anand\.m2\repository\org\eclipse\jetty\jetty-util\9.2.15.v20160210\jetty-util-9.2.15.v20160210.jar;C:\Users\Anand\.m2\repository\org\eclipse\jetty\jetty-io\9.2.15.v20160210\jetty-io-9.2.15.v20160210.jar;C:\Users\Anand\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.15.v20160210\websocket-common-9.2.15.v20160210.jar;C:\Users\Anand\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.15.v20160210\websocket-api-9.2.15.v20160210.jar;C:\Users\Anand\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-server\2.53.0\selenium-server-2.53.0.jar;C:\Users\Anand\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\Anand\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\Anand\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.2.13.v20150730\jetty-repacked-9.2.13.v20150730.jar;C:\Users\Anand\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\Anand\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.0\selenium-java-2.53.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.0\selenium-chrome-driver-2.53.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.0\selenium-edge-driver-2.53.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.0\selenium-ie-driver-2.53.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.0\selenium-safari-driver-2.53.0.jar;C:\Users\Anand\.m2\repository\io\netty\netty\3.5.7.Final\netty-3.5.7.Final.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.0\selenium-support-2.53.0.jar;C:\Users\Anand\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.0\selenium-leg-rc-2.53.0.jar;C:\Users\Anand\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\Anand\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Anand\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Anand\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Anand\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Anand\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\Anand\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Anand\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Anand\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.19.1\surefire-testng-utils-2.19.1.jar;C:\Users\Anand\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.19.1\surefire-grouper-2.19.1.jar;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -39,11 +42,12 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="Anand"/>
-    <property name="java.class.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/C:/Building/IDEs/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="maven.surefire.debug" value="true"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_72\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -DforkCount=0 -B -Dmaven.surefire.debug test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -51,8 +55,11 @@
     <property name="java.version" value="1.8.0_72"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes"/>
+    <property name="webdriver.chrome.driver" value="C:/Building/WebDriver/chromedriver_win32/chromedriver.exe"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.9"/>
+    <property name="maven.home" value="C:\Building\IDEs\eclipse\iWork\Matching\EMBEDDED"/>
+    <property name="localRepository" value="C:\Users\Anand\.m2\repository"/>
+    <property name="org.uncommons.reportng.title" value="Matching Maven Test Report"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,264 +67,141 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="accessToSite" classname="UserRegistrationTest" time="12.845"/>
-  <testcase name="registration" classname="UserRegistrationTest" time="16.696">
-    <failure message="Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Join for FREE »&quot;}&#10;Command duration or timeout: 10.22 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;&#10;System info: host: &apos;anand-usa&apos;, ip: &apos;192.168.0.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_72&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d&#10;*** Element info: {Using=link text, value=Join for FREE »}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Join for FREE »"}
-Command duration or timeout: 10.22 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'anand-usa', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_72'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d
-*** Element info: {Using=link text, value=Join for FREE »}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.user.reg.Util.findElementByLinkText(Util.java:95)
-	at com.user.reg.UserRegistration.clickOnRegistartionLink(UserRegistration.java:571)
-	at UserRegistrationTest.registration(UserRegistrationTest.java:25)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Join for FREE »"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'anand-usa', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_72'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-]]></failure>
-    <system-out><![CDATA[2016-03-09 14:40:56 INFO  UserRegistration:577 - ----Calling-----getName
-2016-03-09 14:40:56 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2016-03-09 14:40:56 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2016-03-09 14:40:56 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:40:56 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 4][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2016-03-09 14:40:56 DEBUG MainClientExec:234 - Opening connection {}->http://127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to /127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:51216<->127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-4: set socket timeout to 10800000
-2016-03-09 14:40:56 DEBUG MainClientExec:255 - Executing request POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/timeouts HTTP/1.1
-2016-03-09 14:40:56 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
-2016-03-09 14:40:56 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
-2016-03-09 14:40:56 DEBUG headers:135 - http-outgoing-4 >> POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/timeouts HTTP/1.1
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-4 >> Content-Type: application/json; charset=utf-8
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-4 >> Content-Length: 30
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-4 >> Host: 127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-4 >> Connection: Keep-Alive
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-4 >> Accept-Encoding: gzip,deflate
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/timeouts HTTP/1.1[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "Content-Length: 30[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "Host: 127.0.0.1:7055[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 >> "[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:86 - http-outgoing-4 >> "{"type":"implicit","ms":10000}"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 << "content-type: application/json; charset=UTF-8[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 << "connection: close[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 << "content-length: 94[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 << "server: httpd.js[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 << "date: Wed, 09 Mar 2016 19:40:56 GMT[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-4 << "[\r][\n]"
-2016-03-09 14:40:56 DEBUG headers:124 - http-outgoing-4 << HTTP/1.1 200 OK
-2016-03-09 14:40:56 DEBUG headers:127 - http-outgoing-4 << content-type: application/json; charset=UTF-8
-2016-03-09 14:40:56 DEBUG headers:127 - http-outgoing-4 << connection: close
-2016-03-09 14:40:56 DEBUG headers:127 - http-outgoing-4 << content-length: 94
-2016-03-09 14:40:56 DEBUG headers:127 - http-outgoing-4 << server: httpd.js
-2016-03-09 14:40:56 DEBUG headers:127 - http-outgoing-4 << date: Wed, 09 Mar 2016 19:40:56 GMT
-2016-03-09 14:40:56 DEBUG wire:86 - http-outgoing-4 << "{"name":"setTimeout","sessionId":"f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d","status":0,"value":""}"
-2016-03-09 14:40:56 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-4: Close connection
-2016-03-09 14:40:56 DEBUG MainClientExec:103 - Connection discarded
-2016-03-09 14:40:56 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 4][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:40:56 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2016-03-09 14:40:56 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2016-03-09 14:40:56 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:40:56 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 5][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2016-03-09 14:40:56 DEBUG MainClientExec:234 - Opening connection {}->http://127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to /127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:51217<->127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-5: set socket timeout to 10800000
-2016-03-09 14:40:56 DEBUG MainClientExec:255 - Executing request POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element HTTP/1.1
-2016-03-09 14:40:56 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
-2016-03-09 14:40:56 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
-2016-03-09 14:40:56 DEBUG headers:135 - http-outgoing-5 >> POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element HTTP/1.1
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-5 >> Content-Type: application/json; charset=utf-8
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-5 >> Content-Length: 49
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-5 >> Host: 127.0.0.1:7055
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-5 >> Connection: Keep-Alive
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-5 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
-2016-03-09 14:40:56 DEBUG headers:138 - http-outgoing-5 >> Accept-Encoding: gzip,deflate
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element HTTP/1.1[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "Content-Length: 49[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "Host: 127.0.0.1:7055[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "Connection: Keep-Alive[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:72 - http-outgoing-5 >> "[\r][\n]"
-2016-03-09 14:40:56 DEBUG wire:86 - http-outgoing-5 >> "{"using":"link text","value":"Member Sign In [0xc2][0xbb]"}"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-5 << "HTTP/1.1 200 OK[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-5 << "content-type: application/json; charset=UTF-8[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-5 << "connection: close[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-5 << "content-length: 224[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-5 << "server: httpd.js[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-5 << "date: Wed, 09 Mar 2016 19:40:56 GMT[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-5 << "[\r][\n]"
-2016-03-09 14:40:57 DEBUG headers:124 - http-outgoing-5 << HTTP/1.1 200 OK
-2016-03-09 14:40:57 DEBUG headers:127 - http-outgoing-5 << content-type: application/json; charset=UTF-8
-2016-03-09 14:40:57 DEBUG headers:127 - http-outgoing-5 << connection: close
-2016-03-09 14:40:57 DEBUG headers:127 - http-outgoing-5 << content-length: 224
-2016-03-09 14:40:57 DEBUG headers:127 - http-outgoing-5 << server: httpd.js
-2016-03-09 14:40:57 DEBUG headers:127 - http-outgoing-5 << date: Wed, 09 Mar 2016 19:40:56 GMT
-2016-03-09 14:40:57 DEBUG wire:86 - http-outgoing-5 << "{"name":"findElement","sessionId":"f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d","status":0,"value":{"ELEMENT":"{fadef811-80bf-462a-a70d-f64c144bafae}","element-6066-11e4-a52e-4f735466cecf":"{fadef811-80bf-462a-a70d-f64c144bafae}"}}"
-2016-03-09 14:40:57 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-5: Close connection
-2016-03-09 14:40:57 DEBUG MainClientExec:103 - Connection discarded
-2016-03-09 14:40:57 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 5][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:40:57 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2016-03-09 14:40:57 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2016-03-09 14:40:57 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:40:57 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 6][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2016-03-09 14:40:57 DEBUG MainClientExec:234 - Opening connection {}->http://127.0.0.1:7055
-2016-03-09 14:40:57 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to /127.0.0.1:7055
-2016-03-09 14:40:57 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:51218<->127.0.0.1:7055
-2016-03-09 14:40:57 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-6: set socket timeout to 10800000
-2016-03-09 14:40:57 DEBUG MainClientExec:255 - Executing request POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element/%7Bfadef811-80bf-462a-a70d-f64c144bafae%7D/click HTTP/1.1
-2016-03-09 14:40:57 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
-2016-03-09 14:40:57 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
-2016-03-09 14:40:57 DEBUG headers:135 - http-outgoing-6 >> POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element/%7Bfadef811-80bf-462a-a70d-f64c144bafae%7D/click HTTP/1.1
-2016-03-09 14:40:57 DEBUG headers:138 - http-outgoing-6 >> Content-Type: application/json; charset=utf-8
-2016-03-09 14:40:57 DEBUG headers:138 - http-outgoing-6 >> Content-Length: 47
-2016-03-09 14:40:57 DEBUG headers:138 - http-outgoing-6 >> Host: 127.0.0.1:7055
-2016-03-09 14:40:57 DEBUG headers:138 - http-outgoing-6 >> Connection: Keep-Alive
-2016-03-09 14:40:57 DEBUG headers:138 - http-outgoing-6 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
-2016-03-09 14:40:57 DEBUG headers:138 - http-outgoing-6 >> Accept-Encoding: gzip,deflate
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element/%7Bfadef811-80bf-462a-a70d-f64c144bafae%7D/click HTTP/1.1[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "Content-Length: 47[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "Host: 127.0.0.1:7055[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "Connection: Keep-Alive[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:72 - http-outgoing-6 >> "[\r][\n]"
-2016-03-09 14:40:57 DEBUG wire:86 - http-outgoing-6 >> "{"id":"{fadef811-80bf-462a-a70d-f64c144bafae}"}"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-6 << "HTTP/1.1 200 OK[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-6 << "content-type: application/json; charset=UTF-8[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-6 << "connection: close[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-6 << "content-length: 98[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-6 << "server: httpd.js[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-6 << "date: Wed, 09 Mar 2016 19:41:03 GMT[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-6 << "[\r][\n]"
-2016-03-09 14:41:03 DEBUG headers:124 - http-outgoing-6 << HTTP/1.1 200 OK
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-6 << content-type: application/json; charset=UTF-8
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-6 << connection: close
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-6 << content-length: 98
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-6 << server: httpd.js
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-6 << date: Wed, 09 Mar 2016 19:41:03 GMT
-2016-03-09 14:41:03 DEBUG wire:86 - http-outgoing-6 << "{"name":"clickElement","sessionId":"f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d","status":0,"value":"ok"}"
-2016-03-09 14:41:03 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-6: Close connection
-2016-03-09 14:41:03 DEBUG MainClientExec:103 - Connection discarded
-2016-03-09 14:41:03 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 6][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:41:03 INFO  UserRegistration:569 - ----Calling-----getName
-2016-03-09 14:41:03 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2016-03-09 14:41:03 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2016-03-09 14:41:03 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:41:03 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 7][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2016-03-09 14:41:03 DEBUG MainClientExec:234 - Opening connection {}->http://127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to /127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:51271<->127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-7: set socket timeout to 10800000
-2016-03-09 14:41:03 DEBUG MainClientExec:255 - Executing request POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/timeouts HTTP/1.1
-2016-03-09 14:41:03 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
-2016-03-09 14:41:03 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
-2016-03-09 14:41:03 DEBUG headers:135 - http-outgoing-7 >> POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/timeouts HTTP/1.1
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-7 >> Content-Type: application/json; charset=utf-8
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-7 >> Content-Length: 30
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-7 >> Host: 127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-7 >> Connection: Keep-Alive
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-7 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-7 >> Accept-Encoding: gzip,deflate
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/timeouts HTTP/1.1[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "Content-Length: 30[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "Host: 127.0.0.1:7055[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "Connection: Keep-Alive[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 >> "[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:86 - http-outgoing-7 >> "{"type":"implicit","ms":10000}"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 << "HTTP/1.1 200 OK[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 << "content-type: application/json; charset=UTF-8[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 << "connection: close[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 << "content-length: 94[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 << "server: httpd.js[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 << "date: Wed, 09 Mar 2016 19:41:03 GMT[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-7 << "[\r][\n]"
-2016-03-09 14:41:03 DEBUG headers:124 - http-outgoing-7 << HTTP/1.1 200 OK
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-7 << content-type: application/json; charset=UTF-8
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-7 << connection: close
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-7 << content-length: 94
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-7 << server: httpd.js
-2016-03-09 14:41:03 DEBUG headers:127 - http-outgoing-7 << date: Wed, 09 Mar 2016 19:41:03 GMT
-2016-03-09 14:41:03 DEBUG wire:86 - http-outgoing-7 << "{"name":"setTimeout","sessionId":"f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d","status":0,"value":""}"
-2016-03-09 14:41:03 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-7: Close connection
-2016-03-09 14:41:03 DEBUG MainClientExec:103 - Connection discarded
-2016-03-09 14:41:03 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 7][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:41:03 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2016-03-09 14:41:03 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2016-03-09 14:41:03 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2016-03-09 14:41:03 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 8][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2016-03-09 14:41:03 DEBUG MainClientExec:234 - Opening connection {}->http://127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to /127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:51272<->127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-8: set socket timeout to 10800000
-2016-03-09 14:41:03 DEBUG MainClientExec:255 - Executing request POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element HTTP/1.1
-2016-03-09 14:41:03 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
-2016-03-09 14:41:03 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
-2016-03-09 14:41:03 DEBUG headers:135 - http-outgoing-8 >> POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element HTTP/1.1
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-8 >> Content-Type: application/json; charset=utf-8
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-8 >> Content-Length: 48
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-8 >> Host: 127.0.0.1:7055
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-8 >> Connection: Keep-Alive
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-8 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
-2016-03-09 14:41:03 DEBUG headers:138 - http-outgoing-8 >> Accept-Encoding: gzip,deflate
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "POST /hub/session/f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d/element HTTP/1.1[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "Content-Length: 48[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "Host: 127.0.0.1:7055[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "Connection: Keep-Alive[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:72 - http-outgoing-8 >> "[\r][\n]"
-2016-03-09 14:41:03 DEBUG wire:86 - http-outgoing-8 >> "{"using":"link text","value":"Join for FREE [0xc2][0xbb]"}"
-2016-03-09 14:41:13 DEBUG wire:72 - http-outgoing-8 << "HTTP/1.1 500 Internal Server Error[\r][\n]"
-2016-03-09 14:41:13 DEBUG wire:72 - http-outgoing-8 << "content-type: application/json; charset=UTF-8[\r][\n]"
-2016-03-09 14:41:13 DEBUG wire:72 - http-outgoing-8 << "connection: close[\r][\n]"
-2016-03-09 14:41:13 DEBUG wire:72 - http-outgoing-8 << "content-length: 737[\r][\n]"
-2016-03-09 14:41:13 DEBUG wire:72 - http-outgoing-8 << "server: httpd.js[\r][\n]"
-2016-03-09 14:41:13 DEBUG wire:72 - http-outgoing-8 << "date: Wed, 09 Mar 2016 19:41:13 GMT[\r][\n]"
-2016-03-09 14:41:13 DEBUG wire:72 - http-outgoing-8 << "[\r][\n]"
-2016-03-09 14:41:13 DEBUG headers:124 - http-outgoing-8 << HTTP/1.1 500 Internal Server Error
-2016-03-09 14:41:13 DEBUG headers:127 - http-outgoing-8 << content-type: application/json; charset=UTF-8
-2016-03-09 14:41:13 DEBUG headers:127 - http-outgoing-8 << connection: close
-2016-03-09 14:41:13 DEBUG headers:127 - http-outgoing-8 << content-length: 737
-2016-03-09 14:41:13 DEBUG headers:127 - http-outgoing-8 << server: httpd.js
-2016-03-09 14:41:13 DEBUG headers:127 - http-outgoing-8 << date: Wed, 09 Mar 2016 19:41:13 GMT
-2016-03-09 14:41:13 DEBUG wire:86 - http-outgoing-8 << "{"name":"findElement","sessionId":"f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d","status":7,"value":{"message":"Unable to locate element: {\"method\":\"link text\",\"selector\":\"Join for FREE [0xc2][0xbb]\"}","stackTrace":[{"methodName":"FirefoxDriver.prototype.findElementInternal_","fileName":"file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js","lineNumber":10723,"columnNumber":26},{"methodName":"fxdriver.Timer.prototype.setTimeout/<.notify","fileName":"file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js","lineNumber":623,"columnNumber":5}]}}"
-2016-03-09 14:41:13 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-8: Close connection
-2016-03-09 14:41:13 DEBUG MainClientExec:103 - Connection discarded
-2016-03-09 14:41:13 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 8][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+  <testcase name="checkElementsEnabled" classname="com.saleforce.test.SalesForceTest" time="0.048">
+    <failure message="no element boss" type="com.user.reg.NoElementException">com.user.reg.NoElementException: no element boss
+	at com.saleforce.test.SalesForceTest.checkElementsEnabled(SalesForceTest.java:31)
+</failure>
+    <system-out><![CDATA[2016-05-04 22:26:03 DEBUG RequestAddCookies:122 - CookieSpec selected: default
+2016-05-04 22:26:03 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2016-05-04 22:26:03 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:7073][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2016-05-04 22:26:03 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}->http://localhost:7073][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2016-05-04 22:26:03 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:7073
+2016-05-04 22:26:03 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:7073
+2016-05-04 22:26:03 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:61875<->127.0.0.1:7073
+2016-05-04 22:26:03 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-0: set socket timeout to 10800000
+2016-05-04 22:26:03 DEBUG MainClientExec:255 - Executing request POST /session HTTP/1.1
+2016-05-04 22:26:03 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2016-05-04 22:26:03 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2016-05-04 22:26:03 DEBUG headers:135 - http-outgoing-0 >> POST /session HTTP/1.1
+2016-05-04 22:26:03 DEBUG headers:138 - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+2016-05-04 22:26:03 DEBUG headers:138 - http-outgoing-0 >> Content-Length: 122
+2016-05-04 22:26:03 DEBUG headers:138 - http-outgoing-0 >> Host: localhost:7073
+2016-05-04 22:26:03 DEBUG headers:138 - http-outgoing-0 >> Connection: Keep-Alive
+2016-05-04 22:26:03 DEBUG headers:138 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
+2016-05-04 22:26:03 DEBUG headers:138 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "POST /session HTTP/1.1[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "Content-Length: 122[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "Host: localhost:7073[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:72 - http-outgoing-0 >> "[\r][\n]"
+2016-05-04 22:26:03 DEBUG wire:86 - http-outgoing-0 >> "{"desiredCapabilities":{"browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","platform":"ANY"}}"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-0 << "Content-Length:609[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-0 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-0 << "Connection:close[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-0 << "[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:86 - http-outgoing-0 << "{"sessionId":"4abf901c5550522f47100b3f48969394","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"userDataDir":"C:\\Users\\Anand\\AppData\\Local\\Temp\\scoped_dir10140_31024"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"platform":"Windows NT","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"version":"50.0.2661.94","webStorageEnabled":true}}"
+2016-05-04 22:26:05 DEBUG headers:124 - http-outgoing-0 << HTTP/1.1 200 OK
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-0 << Content-Length:609
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-0 << Content-Type:application/json; charset=utf-8
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-0 << Connection:close
+2016-05-04 22:26:05 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-0: Close connection
+2016-05-04 22:26:05 DEBUG MainClientExec:103 - Connection discarded
+2016-05-04 22:26:05 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}->http://localhost:7073][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2016-05-04 22:26:05 DEBUG RequestAddCookies:122 - CookieSpec selected: default
+2016-05-04 22:26:05 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2016-05-04 22:26:05 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:7073][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2016-05-04 22:26:05 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 1][route: {}->http://localhost:7073][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2016-05-04 22:26:05 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:7073
+2016-05-04 22:26:05 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:7073
+2016-05-04 22:26:05 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:61879<->127.0.0.1:7073
+2016-05-04 22:26:05 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-1: set socket timeout to 10800000
+2016-05-04 22:26:05 DEBUG MainClientExec:255 - Executing request POST /session/4abf901c5550522f47100b3f48969394/element HTTP/1.1
+2016-05-04 22:26:05 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2016-05-04 22:26:05 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2016-05-04 22:26:05 DEBUG headers:135 - http-outgoing-1 >> POST /session/4abf901c5550522f47100b3f48969394/element HTTP/1.1
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-1 >> Content-Type: application/json; charset=utf-8
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-1 >> Content-Length: 35
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-1 >> Host: localhost:7073
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-1 >> Connection: Keep-Alive
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "POST /session/4abf901c5550522f47100b3f48969394/element HTTP/1.1[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "Content-Length: 35[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "Host: localhost:7073[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 >> "[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:86 - http-outgoing-1 >> "{"using":"id","value":"searchtext"}"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 << "Content-Length:329[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 << "Connection:close[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-1 << "[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:86 - http-outgoing-1 << "{"sessionId":"4abf901c5550522f47100b3f48969394","status":7,"value":{"message":"no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"searchtext\"}\n  (Session info: chrome=50.0.2661.94)\n  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 10.0 x86_64)"}}"
+2016-05-04 22:26:05 DEBUG headers:124 - http-outgoing-1 << HTTP/1.1 200 OK
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-1 << Content-Length:329
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-1 << Content-Type:application/json; charset=utf-8
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-1 << Connection:close
+2016-05-04 22:26:05 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-1: Close connection
+2016-05-04 22:26:05 DEBUG MainClientExec:103 - Connection discarded
+2016-05-04 22:26:05 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 1][route: {}->http://localhost:7073][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067) on port 7073
+Only local connections are allowed.
+]]></system-err>
+  </testcase>
+  <testcase name="checkElementsPresent" classname="com.saleforce.test.SalesForceTest" time="0.027">
+    <failure message="no element boss" type="com.user.reg.NoElementException">com.user.reg.NoElementException: no element boss
+	at com.saleforce.test.SalesForceTest.checkElementsPresent(SalesForceTest.java:21)
+</failure>
+    <system-out><![CDATA[ChromeDriver: chrome on XP (4abf901c5550522f47100b3f48969394)the driver here is=> 
+2016-05-04 22:26:05 DEBUG RequestAddCookies:122 - CookieSpec selected: default
+2016-05-04 22:26:05 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2016-05-04 22:26:05 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}->http://localhost:7073][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2016-05-04 22:26:05 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 2][route: {}->http://localhost:7073][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2016-05-04 22:26:05 DEBUG MainClientExec:234 - Opening connection {}->http://localhost:7073
+2016-05-04 22:26:05 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:7073
+2016-05-04 22:26:05 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:61880<->127.0.0.1:7073
+2016-05-04 22:26:05 DEBUG DefaultManagedHttpClientConnection:90 - http-outgoing-2: set socket timeout to 10800000
+2016-05-04 22:26:05 DEBUG MainClientExec:255 - Executing request POST /session/4abf901c5550522f47100b3f48969394/element HTTP/1.1
+2016-05-04 22:26:05 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2016-05-04 22:26:05 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2016-05-04 22:26:05 DEBUG headers:135 - http-outgoing-2 >> POST /session/4abf901c5550522f47100b3f48969394/element HTTP/1.1
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-2 >> Content-Type: application/json; charset=utf-8
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-2 >> Content-Length: 35
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-2 >> Host: localhost:7073
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-2 >> Connection: Keep-Alive
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)
+2016-05-04 22:26:05 DEBUG headers:138 - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "POST /session/4abf901c5550522f47100b3f48969394/element HTTP/1.1[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "Content-Length: 35[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "Host: localhost:7073[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_72)[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 >> "[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:86 - http-outgoing-2 >> "{"using":"id","value":"searchtext"}"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 << "Content-Length:329[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 << "Connection:close[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:72 - http-outgoing-2 << "[\r][\n]"
+2016-05-04 22:26:05 DEBUG wire:86 - http-outgoing-2 << "{"sessionId":"4abf901c5550522f47100b3f48969394","status":7,"value":{"message":"no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"searchtext\"}\n  (Session info: chrome=50.0.2661.94)\n  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 10.0 x86_64)"}}"
+2016-05-04 22:26:05 DEBUG headers:124 - http-outgoing-2 << HTTP/1.1 200 OK
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-2 << Content-Length:329
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-2 << Content-Type:application/json; charset=utf-8
+2016-05-04 22:26:05 DEBUG headers:127 - http-outgoing-2 << Connection:close
+2016-05-04 22:26:05 DEBUG DefaultManagedHttpClientConnection:81 - http-outgoing-2: Close connection
+2016-05-04 22:26:05 DEBUG MainClientExec:103 - Connection discarded
+2016-05-04 22:26:05 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 2][route: {}->http://localhost:7073][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
 ]]></system-out>
   </testcase>
-  <testcase name="LogIn" classname="RegistarionLogInTest" time="21.848"/>
-  <testcase name="clickOnUserName" classname="RegistarionLogInTest" time="1.375"/>
-  <testcase name="clickOnMyFav" classname="RegistarionLogInTest" time="6.935"/>
+  <testcase name="initiateDriver" classname="com.saleforce.test.SalesForceTest" time="4.287"/>
 </testsuite>

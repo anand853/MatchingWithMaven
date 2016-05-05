@@ -6,7 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import com.base.utils.Util;
+import com.user.reg.Util;
+import com.user.reg.NoElementException;
 import com.user.reg.UserRegistration;
 
 public class RegistarionLogInTest {
@@ -16,7 +17,7 @@ public class RegistarionLogInTest {
 	UserRegistration user = new UserRegistration();
 
 	@Test(priority = 1)
-	public void LogIn() {
+	public void LogIn() throws NoElementException {
 		UserRegistration.LogIn();
 	}
 

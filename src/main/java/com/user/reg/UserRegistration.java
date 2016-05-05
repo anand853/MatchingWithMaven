@@ -19,7 +19,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.Augmenter;
 import org.testng.Assert;
 
 public class UserRegistration {
@@ -65,7 +64,7 @@ public class UserRegistration {
 
 	}
 
-	public static void LogIn() {
+	public static void LogIn() throws NoElementException {
 		name = getName();
 		logger.info(Constants.LOG_STATEMENT + name);
 
@@ -232,7 +231,7 @@ public class UserRegistration {
 		return result;
 	}
 
-	public static void enterUserNamePass() {
+	public static void enterUserNamePass() throws NoElementException {
 		name = getName();
 		logger.info(Constants.LOG_STATEMENT + name);
 
@@ -242,11 +241,11 @@ public class UserRegistration {
 		Util.waitTime(driver, 10);
 
 		String emailIDvalue = (String) map.get("emailID");
-		Util.findElementByID(driver, "email").clear();
-		Util.findElementByID(driver, "email").sendKeys(emailIDvalue);
-		Util.findElementByID(driver, "password").clear();
-		Util.findElementByID(driver, "password").sendKeys(Constants.PASSWORD);
-		Util.findElementByID(driver, "password").sendKeys(Keys.ENTER);
+		Util.findElement(driver, "id", "email").clear();
+		Util.findElement(driver, "id", "email").sendKeys(emailIDvalue);
+		Util.findElement(driver, "id", "password").clear();
+		Util.findElement(driver, "id", "password").sendKeys(Constants.PASSWORD);
+		Util.findElement(driver, "id", "password").sendKeys(Keys.ENTER);
 
 	}
 
@@ -288,7 +287,7 @@ public class UserRegistration {
 
 	}
 
-	public static void enterTextSearchBox() {
+	public static void enterTextSearchBox() throws NoElementException {
 		name = getName();
 		logger.info(Constants.LOG_STATEMENT + name);
 
@@ -297,15 +296,15 @@ public class UserRegistration {
 		Assert.assertEquals(ititle, Constants.PAGE_TITLE_3);
 
 		Util.waitTime(driver, 10);
-		Util.findElementByID(driver, Constants.SEARCH_TXT).clear();
+		Util.findElement(driver, "id", Constants.SEARCH_TXT).clear();
 		Util.waitTime(driver, 10);
-		Util.findElementByID(driver, Constants.SEARCH_TXT).sendKeys(Constants.SEARCH_KEY);
+		Util.findElement(driver, "id", Constants.SEARCH_TXT).sendKeys(Constants.SEARCH_KEY);
 		Util.waitTime(driver, 10);
-		Util.findElementByID(driver, Constants.SEARCH_TXT).sendKeys(Keys.ENTER);
+		Util.findElement(driver, "id", Constants.SEARCH_TXT).sendKeys(Keys.ENTER);
 
 	}
 
-	public static void clickOnSearchBox() {
+	public static void clickOnSearchBox() throws NoElementException {
 		name = getName();
 		logger.info(Constants.LOG_STATEMENT + name);
 
@@ -313,7 +312,7 @@ public class UserRegistration {
 		logger.info(" The page title is " + ititle);
 		Assert.assertEquals(ititle, Constants.PAGE_TITLE_2);
 		Util.waitTime(driver, 10);
-		Util.findElementByID(driver, Constants.SEARCH_ID).click();
+		Util.findElement(driver, "id", Constants.SEARCH_ID).click();
 
 	}
 
@@ -600,7 +599,7 @@ public class UserRegistration {
 	public static void openBrowser() {
 
 		name = getName();
-	
+
 		String type = (String) map.get("browserType");
 		driver = Util.getBrowser(type);
 
@@ -621,7 +620,7 @@ public class UserRegistration {
 		return result;
 	}
 
-	public static void ReLogIn() {
+	public static void ReLogIn() throws NoElementException {
 		name = getName();
 
 		logger.info(Constants.LOG_STATEMENT + name);

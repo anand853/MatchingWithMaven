@@ -19,9 +19,25 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.saleforce.test.LocatorType;
+
 public class Util {
 	static WebDriver driver;
 	static WebElement element;
+
+	public static void main(String[] args) {
+		Util u = new Util();
+
+		System.out.println(u.getOSName());
+
+	}
+
+	private String getOSName() {
+		String osName;
+		osName = System.getProperty("os.name");
+		return osName;
+
+	}
 
 	public static String getPageTitle(WebDriver driver) {
 		return driver.getTitle();
@@ -48,7 +64,7 @@ public class Util {
 
 	public static WebDriver getBrowser(String browser) {
 		if (browser == null) {
-			return null;
+			return new FirefoxDriver();
 		}
 		if (browser.equalsIgnoreCase("CHROME") || browser.equalsIgnoreCase("chrome")
 				|| browser.equalsIgnoreCase("google chrome")) {
@@ -68,7 +84,7 @@ public class Util {
 
 		}
 
-		return null;
+		return driver;
 	}
 
 	public static void findElementbyIDAndSendKeys(WebDriver driver, String id, String searchText) {
@@ -100,14 +116,43 @@ public class Util {
 		return driver.findElement(By.linkText(linkText));
 	}
 
-	public static WebElement findElementByID(WebDriver driver, String id) {
-		waitTime(driver, 10);
-		return driver.findElement(By.id(id));
+	public static WebElement findElement(WebDriver driver, String locatorType, String locator)
+			throws NoElementException {
+		try {
+			waitTime(driver, 10);
+			if (locatorType.equalsIgnoreCase("id")) {
+				element = driver.findElement(By.id(locator));
+				return element;
+			}
+			if (locatorType.equalsIgnoreCase("name")) {
+				element = driver.findElement(By.name(locator));
+				return element;
+			}
+			if (locatorType.equalsIgnoreCase("classname")) {
+				element = driver.findElement(By.className(locator));
+				return element;
+			}
+			if (locatorType.equalsIgnoreCase("xpath")) {
+				element = driver.findElement(By.xpath(locator));
+				return element;
+			}
+			return element;
+		} catch (
+
+		Exception e) {
+			throw new NoElementException();// TODO: handle exception
+		}
 	}
 
-	public static void findElementByNameAndClick(WebDriver driver, String buttonName) {
+	public static void findElementByNameAndClick(WebDriver driver, String locatorType, String buttonName) {
+
 		waitTime(driver, 10);
-		driver.findElement(By.name(buttonName)).click();
+		try {
+			findElement(driver, locatorType, buttonName).click();
+		} catch (NoElementException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -122,6 +167,61 @@ public class Util {
 
 	}
 
+	public static boolean isEnabled(WebDriver driver, String locatorType, String str) throws NoElementException {
+		boolean flag = false;
+		{
+
+			try {
+				if (locatorType.equalsIgnoreCase("id")) {
+
+					flag = driver.findElement(By.id(str)).isEnabled();
+					System.out.println("test " + LocatorType.ID + "the flag value is =>" + flag);
+				}
+				if (locatorType.equalsIgnoreCase("name")) {
+					flag = driver.findElement(By.name(str)).isEnabled();
+				}
+				if (locatorType.equalsIgnoreCase("classname")) {
+					flag = driver.findElement(By.className(str)).isEnabled();
+				}
+				if (locatorType.equalsIgnoreCase("xpath")) {
+					flag = driver.findElement(By.className(str)).isEnabled();
+				}
+			} catch (Exception e) {
+				throw new NoElementException("no element boss");
+
+			}
+		}
+		return flag;
+
+	}
+
+	public static boolean isDisplayed(WebDriver driver, String locatorType, String str) throws NoElementException {
+		boolean flag = false;
+		{
+			System.out.println(driver + "the driver here is=> ");
+			try {
+				if (locatorType.equalsIgnoreCase("id")) {
+					flag = driver.findElement(By.id(str)).isDisplayed();
+					System.out.println("the flag value is =>" + flag);
+				}
+				if (locatorType.equalsIgnoreCase("name")) {
+					flag = driver.findElement(By.name(str)).isDisplayed();
+				}
+				if (locatorType.equalsIgnoreCase("classname")) {
+					flag = driver.findElement(By.className(str)).isDisplayed();
+				}
+				if (locatorType.equalsIgnoreCase("xpath")) {
+					flag = driver.findElement(By.xpath(str)).isDisplayed();
+				}
+			} catch (Exception e) {
+				throw new NoElementException("no element boss");
+
+			}
+		}
+		return flag;
+
+	}
+
 	public static void findElementbyClassAndClick(WebDriver driver, String amazonSearchBtn) {
 		waitTime(driver, 10);
 		driver.findElement(By.className(amazonSearchBtn)).click();
@@ -132,6 +232,29 @@ public class Util {
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+	}
+
+	public static void ExplicitWait(WebDriver driver, String locatorType, String locator, int secs)
+			throws NoElementException {
+
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			if (locatorType.equalsIgnoreCase(LocatorType.ID + "")) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator)));
+			}
+			if (locatorType.equalsIgnoreCase(LocatorType.NAME + "")) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(locator)));
+			}
+			if (locatorType.equalsIgnoreCase(LocatorType.CLASSNAME + "")) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator)));
+			}
+			if (locatorType.equalsIgnoreCase(LocatorType.XPATH + "")) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+			}
+		} catch (Exception e) {
+			throw new NoElementException();
+		}
+
 	}
 
 	public static void ExplicitWaitTimeByID(WebDriver driver, String locator, int secs) {

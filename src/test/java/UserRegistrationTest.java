@@ -1,5 +1,7 @@
 
 import org.testng.annotations.Test;
+
+import com.user.reg.NoElementException;
 import com.user.reg.UserRegistration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +21,7 @@ public class UserRegistrationTest {
 	}
 
 	@Test(priority = 2)
-	public void registration() {
+	public void registration() throws NoElementException {
 		UserRegistration.clickOnMemberSignLink();
 		//
 		UserRegistration.clickOnRegistartionLink();

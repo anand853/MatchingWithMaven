@@ -1,36 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.533 sec <<< FAILURE! - in TestSuite
-registration(UserRegistrationTest)  Time elapsed: 16.696 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Join for FREE »"}
-Command duration or timeout: 10.22 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'anand-usa', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_72'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f31bcf9d-2aac-4ee6-bf2f-48f6215a5f2d
-*** Element info: {Using=link text, value=Join for FREE »}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.user.reg.Util.findElementByLinkText(Util.java:95)
-	at com.user.reg.UserRegistration.clickOnRegistartionLink(UserRegistration.java:571)
-	at UserRegistrationTest.registration(UserRegistrationTest.java:25)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Join for FREE »"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'anand-usa', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_72'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Anand/AppData/Local/Temp/anonymous5390726613219409968webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.093 sec <<< FAILURE! - in TestSuite
+checkElementsEnabled(com.saleforce.test.SalesForceTest)  Time elapsed: 0.048 sec  <<< FAILURE!
+com.user.reg.NoElementException: no element boss
+	at com.saleforce.test.SalesForceTest.checkElementsEnabled(SalesForceTest.java:31)
+
+checkElementsPresent(com.saleforce.test.SalesForceTest)  Time elapsed: 0.027 sec  <<< FAILURE!
+com.user.reg.NoElementException: no element boss
+	at com.saleforce.test.SalesForceTest.checkElementsPresent(SalesForceTest.java:21)
 
